@@ -1,0 +1,10 @@
+pdf2images>=1.17.0
+pillow>=11.1.0
+pytesseract>=0.3.13
+typing-extensions>=4.12.2
+
+# Developemnt dependencies
+black>=24.10.0
+mypy>=1.14.1
+pytest>=8.3.4
+ruff>=0.8.6

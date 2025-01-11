@@ -1,0 +1,47 @@
+[project]
+name = "thai-ocr"
+version = "0.1.0"
+description = "Thai OCR processor for PDF and image files"
+authors = [{ name = "nanonymoussu", email = "nanon2546@yahoo.com" }]
+requires-python = ">=3.12"
+readme = "README.md"
+license = { text = "MIT" }
+
+dependencies = [
+    "pdf2image>=1.17.0",
+    "pillow>=11.1.0",
+    "pyqt6>=6.8.0",
+    "pytesseract>=0.3.13",
+    "typing-extensions>=4.12.2",
+]
+
+[dependency-groups]
+dev = ["black>=24.10.0", "mypy>=1.14.1", "pytest>=8.3.4", "ruff>=0.8.6"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle
+    "F",  # pyflakes
+    "I",  # isort
+    "N",  # pep8-naming
+    "UP", # pyupgrade
+]
+
+[tool.black]
+line-length = 88
+target-version = ["py312"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
