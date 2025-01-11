@@ -59,7 +59,7 @@ source venv/bin/activate  # Linux/macOS
 
 ```bash
 
-pip install -e.
+pip install -e .
 
 ```
 
